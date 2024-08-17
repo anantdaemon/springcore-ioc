@@ -53,6 +53,7 @@ public class Employee {
 	 * @param employeeId the employeeId to set
 	 */
 	public void setEmployeeId(int employeeId) {
+		System.out.println("Setter method called for employeeId on Object :" + this.hashCode());
 		this.employeeId = employeeId;
 	}
 
@@ -69,6 +70,7 @@ public class Employee {
 	 * @param employeeName the employeeName to set
 	 */
 	public void setEmployeeName(String employeeName) {
+		System.out.println("Setter method called for employeeName on Object :" + this.hashCode());
 		this.employeeName = employeeName;
 	}
 
@@ -85,6 +87,7 @@ public class Employee {
 	 * @param employeeAddress the employeeAddress to set
 	 */
 	public void setEmployeeAddress(String employeeAddress) {
+		System.out.println("Setter method called for employeeAdress on Object :" + this.hashCode());
 		this.employeeAddress = employeeAddress;
 	}
 

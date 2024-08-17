@@ -7,9 +7,34 @@
 https://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
-<bean class ="com.springcore.spingcore_ioc.Employee" name = "employee">
-<property name="employeeId"><value>0001</value></property>
-<property name="employeeName"><value>Anant Kumar</value></property>
-<property name="employeeAddress"><value>Patna, Bihar.</value></property>
-</bean>
+	
+	<!-- Setting bean property using property and value and tags. -->
+	<bean class="com.springcore.spingcore_ioc.Employee"
+		name="employee1">
+		<property name="employeeId">
+			<value>1</value>
+		</property>
+		<property name="employeeName">
+			<value>Anant Kumar</value>
+		</property>
+		<property name="employeeAddress">
+			<value>Patna, Bihar.</value>
+		</property>
+	</bean>
+	
+	<!-- Setting bean property using value in property tag itself. -->
+	<bean class="com.springcore.spingcore_ioc.Employee"
+		name="employee2">
+		<property name="employeeId" value = "2"/>
+			
+		<property name="employeeName" value = "Gaurav Kumar" />
+			
+		<property name="employeeAddress" value = "Patna, Bihar."/>
+	</bean>
+	
+	<!-- Setting bean property using p:value in bean tag itself. -->
+	<!-- p:schema is defined for this purpose. -->
+	<bean class="com.springcore.spingcore_ioc.Employee"
+		name="employee3" p:employeeId = "3" p:employeeName = "Shubham Kumar" p:employeeAddress = "Patna, Bihar."/>
+		
 </beans>
