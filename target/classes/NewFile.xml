@@ -9,7 +9,7 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<!-- Setting bean property using property and value and tags. -->
-	<bean class="com.springcore.spingcore_ioc.Employee"
+	<bean class="com.springcore.spingcore_ioc.pojo.Employee"
 		name="employee1">
 		<property name="employeeId">
 			<value>1</value>
@@ -23,7 +23,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 	</bean>
 	
 	<!-- Setting bean property using value in property tag itself. -->
-	<bean class="com.springcore.spingcore_ioc.Employee"
+	<bean class="com.springcore.spingcore_ioc.pojo.Employee"
 		name="employee2">
 		<property name="employeeId" value = "2"/>
 			
@@ -34,7 +34,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<!-- Setting bean property using p:value in bean tag itself. -->
 	<!-- p:schema is defined for this purpose. -->
-	<bean class="com.springcore.spingcore_ioc.Employee"
+	<bean class="com.springcore.spingcore_ioc.pojo.Employee"
 		name="employee3" p:employeeId = "3" p:employeeName = "Shubham Kumar" p:employeeAddress = "Patna, Bihar."/>
 		
 </beans>

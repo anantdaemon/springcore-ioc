@@ -1,6 +1,9 @@
 package com.springcore.spingcore_ioc;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.springcore.spingcore_ioc.pojo.Employee;
+
 import org.springframework.context.ApplicationContext;
 
 /**

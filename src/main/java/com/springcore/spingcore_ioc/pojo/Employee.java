@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.springcore.spingcore_ioc;
+package com.springcore.spingcore_ioc.pojo;
 
 /**
  * POJO Class for Demo of Dependency Injection.
