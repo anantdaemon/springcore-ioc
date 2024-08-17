@@ -5,6 +5,7 @@ package com.springcore.spingcore_ioc.pojo;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 /**
@@ -24,6 +25,7 @@ public class CollectionInjectionPojo {
 	private List<String> empPhoneNum;
 	private Set<String> empAddress;
 	private Map<String, String> empCourses;
+	private Properties empProps;
 
 	/**
 	 * @param empName
@@ -32,12 +34,14 @@ public class CollectionInjectionPojo {
 	 * @param empCourses
 	 */
 	public CollectionInjectionPojo(String empName, List<String> empPhoneNum, Set<String> empAdress,
-			Map<String, String> empCourses, Set<String> empAddress) {
+			Map<String, String> empCourses, Set<String> empAddress, Properties empProps) {
 		super();
 		this.empName = empName;
 		this.empPhoneNum = empPhoneNum;
 		this.empAddress = empAddress;
 		this.empCourses = empCourses;
+		this.setEmpProps(empProps);
+
 	}
 
 	/**
@@ -96,10 +100,24 @@ public class CollectionInjectionPojo {
 		this.empCourses = empCourses;
 	}
 
+	/**
+	 * @return the empProps
+	 */
+	public Properties getEmpProps() {
+		return empProps;
+	}
+
+	/**
+	 * @param empProps the empProps to set
+	 */
+	public void setEmpProps(Properties empProps) {
+		this.empProps = empProps;
+	}
+
 	@Override
 	public String toString() {
-		return "CollectionInjectionPojo \n["+"\n"+"empName = " + empName + ",\n" + "empPhoneNum = " + empPhoneNum + ", \n"
-				+ "empAddress = " + empAddress + ",\n" + "empCourses = " + empCourses + "\n]";
+		return "CollectionInjectionPojo \n[" + "\n" + "empName = " + empName + ",\n" + "empPhoneNum = " + empPhoneNum
+				+ ", \n" + "empAddress = " + empAddress + ",\n" + "empCourses = " + empCourses + ",\n" + "empProps = " + empProps + "\n]";
 	}
 
 }

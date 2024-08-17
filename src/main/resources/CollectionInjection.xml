@@ -51,6 +51,15 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 		</map>
 		</property>
 
+		<!-- Setting the Properties. key, value pairs -->
+		<!-- Uses props tag -->
+		<property name="empProps">
+		<props>
+		<prop key="name">Anant</prop>
+		<prop key="designation">Software Engineer</prop>
+		<prop key="company">TCS</prop>
+		</props>
+		</property>
 	</bean>
 
 </beans>
